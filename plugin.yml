@@ -1,0 +1,33 @@
+name: ElyraEconomy
+version: 1.0
+main: com.elyra.economy.Main
+api-version: 1.8
+description: High-quality professional Economy plugin with GUI sell, pay, and bulk actions.
+author: ElyraDev
+
+commands:
+  pay:
+    description: Transfer money to another player.
+    usage: /pay <player> <amount>
+    permission: elyraeconomy.command.pay
+  buy:
+    description: Purchase items from the server shop.
+    usage: /buy <item> [amount]
+    permission: elyraeconomy.command.buy
+  sell:
+    description: Sell items via hand, inventory, bulk item name, or open the chest auto-sell GUI.
+    usage: /sell [hand|inventory|item] [amount]
+    aliases: [saleprice, sellall]
+    permission: elyraeconomy.command.sell
+
+permissions:
+  elyraeconomy.command.pay:
+    description: Allows players to transfer money.
+    default: true
+  elyraeconomy.command.buy:
+    description: Allows players to buy items.
+    default: true
+  elyraeconomy.command.sell:
+    description: Allows players to sell items.
+    default: true
+    
